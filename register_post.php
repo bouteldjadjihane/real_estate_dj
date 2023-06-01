@@ -85,7 +85,7 @@ else{
         $property_id = $_POST['property_id'];
         $property_owner = $_POST['property_owner'];
         if ( isset($_SESSION['offer'])) {
-            $offer = 'NULL';
+            $offer = '0';
         } else {
             $offer = $_POST['offer'] ?? NULL;
         }

@@ -48,7 +48,7 @@
       $property_id = $_POST['property_id'];
       $property_owner = $_POST['property_owner'];
       $_SESSION['is_rent'] = $_POST['is_rent'];
-      $_SESSION['offer'] = $_POST['offer'] ?? NULL;
+      $_SESSION['offer'] = isset($_POST['offer']) ?  $_POST['offer'] : '0';
       header('Location: register.php');
     }
    

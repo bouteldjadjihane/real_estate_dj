@@ -140,47 +140,51 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])){
                 Buying Status
             </h5>
             <p class="proile-rating"><i class="fa-solid fa-house fa-xl me-2" style="color: #3668bf;"></i>property ID: <span><?php echo $data['property_id'] ?></span></p>
-            <p class="proile-rating"><i class="fa-solid fa-square-check fa-xl me-2 " style="color: #3668bf;"></i> Offer Selected : <span><?php if ($row["offer"] == '0') {
-        echo 'Paid';
-    } else if ($data["offer"] == '1') {
-        echo '5 Months';
-    } elseif ($data["offer"] == '2') {
-        echo '1 year';
-    } else {
-        echo '6 Years'; 
-    } ?></span></p>
-    <p class="proile-rating"><i class="fa-solid fa-sack-dollar fa-xl me-2" style="color: #3668bf; "></i>Property Price: <span><?php echo $data['price'] ?></span></p>
-    <p class="proile-rating"><i class="fa-solid fa-money-check-dollar  fa-xl me-2" style="color: #3668bf;"></i>Monthly paying amount: DA<span> <?php
-        $offer = $data['offer'];
-        $price = $data['price'];
-        $payingAmount = 0; 
-        if (is_null($offer)) {
-            $payingAmount = $price;
-        } else if ($offer == '1') {
-            $payingAmount = $price / 5;
-        } elseif ($offer == '2') {
-            $payingAmount = $price / 12; 
-        } else {
-            $payingAmount = $price / 72;
-        } 
-        echo number_format($payingAmount, 5, '.', ' '); 
-        ?></span>
-    </p>
-    <p class="proile-rating"><i class="fa-solid fa-piggy-bank  fa-xl me-2" style="color: #3668bf; "    ></i>Remaining Amount: DA <span><?php echo $data['price'] -  $payingAmount; ?></span>
-    </p>
-    <p class="proile-rating"><i class="fa-solid fa-clock-rotate-left  fa-xl me-2" style="color: #3668bf; "          ></i>Due Date: 
-      <span>
-        <?php
-        // set the default timezone to use.
-        date_default_timezone_set('UTC');
-        $date = new DateTimeImmutable($data['expected_end_date']);
-        $x = $date->format('l jS \o\f F Y h:i:s A');
-        echo $x;
-        ?>
-    </span>
-    </p>
-    <?php }?>
-                </div>
+            <p class="proile-rating"><i class="fa-solid fa-sack-dollar fa-xl me-2" style="color: #3668bf; "></i>Property Price: <span><?php echo $data['price'] ?></span></p>
+            <?php if ($data['offer'] == '0' ){?>
+            <p class="proile-rating"><i class="fa-solid fa-square-check fa-xl me-2 " style="color: #3668bf;"></i> Offer Selected : <span>
+                <?php if ($data["offer"] == '0') {
+                        echo 'Paid';
+                } else if ($data["offer"] == '1') {
+                    echo '5 Months';
+                } elseif ($data["offer"] == '2') {
+                    echo '1 year';
+                } else {
+                    echo '6 Years'; 
+                } ?></span></p>
+            <?php }?>
+            <?php if ($data['offer'] != '0'){?>
+            <p class="proile-rating"><i class="fa-solid fa-money-check-dollar  fa-xl me-2" style="color: #3668bf;"></i>Monthly paying amount: DA<span> <?php
+            $offer = $data['offer'];
+            $price = $data['price'];
+            $payingAmount = 0; 
+            if (is_null($offer)) {
+                $payingAmount = $price;
+            } else if ($offer == '1') {
+                $payingAmount = $price / 5;
+            } elseif ($offer == '2') {
+                $payingAmount = $price / 12; 
+            } else {
+                $payingAmount = $price / 72;
+            } 
+            echo number_format($payingAmount, 5, '.', ' '); 
+            ?></span>
+            </p>
+            <p class="proile-rating"><i class="fa-solid fa-piggy-bank  fa-xl me-2" style="color: #3668bf; "></i>Remaining Amount: DA <span><?php echo $data['price'] -  $payingAmount; ?></span>
+            </p>
+            <p class="proile-rating"><i class="fa-solid fa-clock-rotate-left  fa-xl me-2" style="color: #3668bf; "></i>Due Date: 
+            <span>
+                <?php
+                // set the default timezone to use.
+                date_default_timezone_set('UTC');
+                $date = new DateTimeImmutable($data['expected_end_date']);
+                $x = $date->format('l jS \o\f F Y h:i:s A');
+                echo $x;
+                ?>
+            </span>
+            </p>
+            <?php }}?>
+             </div>
                 
             </div>
             
