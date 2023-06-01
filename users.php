@@ -2,6 +2,7 @@
 session_start();//session call
 include('inc/connection.php');
 
+// Get an apply (order) by its id
 function order_by_id($order_id) {
   global $conn;
   $query = mysqli_query($conn,"SELECT * FROM apply LEFT JOIN users on users.id = apply.user_id LEFT JOIN property ON apply.property_id = property.property_id WHERE apply.order_id = '$order_id'"); 
