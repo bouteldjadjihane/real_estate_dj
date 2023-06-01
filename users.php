@@ -177,8 +177,9 @@ if( isset( $_SESSION['id'] ) || isset( $_SESSION['agency_id'] ) ) {
                 <?php $order = order_by_id($row['order_id']);?>
                 
     <p class="proile-rating"><i class="fa-solid fa-house fa-xl me-2" style="color: #3668bf;"></i>property ID: <span><?php echo $order['property_id'] ?></span></p>
-    <p class="proile-rating"><i class="fa-solid fa-square-check fa-xl me-2 " style="color: #3668bf;"></i> Offer Selected : <span><?php if (is_null($order["offer"])) {
-    echo 'Directly';
+    <p class="proile-rating"><i class="fa-solid fa-square-check fa-xl me-2 " style="color: #3668bf;"></i> Offer Selected : <span>
+      <?php if ($order["offer"] == '0') {
+    echo 'Paid';
     } else if ($order["offer"] == '1') {
         echo '5 Months';
     } elseif ($order["offer"] == '2') {
