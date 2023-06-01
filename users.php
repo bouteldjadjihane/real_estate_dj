@@ -146,7 +146,7 @@ if( isset( $_SESSION['id'] ) || isset( $_SESSION['agency_id'] ) ) {
         echo "<td>" . $row["email"] . "</td>";
         echo "<td>" . $row["type"] . "</td>";
         echo "<td>";
-        if (is_null($row["offer"])) { 
+        if  ( $row["offer"] == '0') { 
             echo 'Paid';
         } else if ($row["offer"] == '1') {
             echo '5 Months';

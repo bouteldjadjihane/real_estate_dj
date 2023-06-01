@@ -140,8 +140,8 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])){
                 Buying Status
             </h5>
             <p class="proile-rating"><i class="fa-solid fa-house fa-xl me-2" style="color: #3668bf;"></i>property ID: <span><?php echo $data['property_id'] ?></span></p>
-            <p class="proile-rating"><i class="fa-solid fa-square-check fa-xl me-2 " style="color: #3668bf;"></i> Offer Selected : <span><?php if (is_null($data["offer"])) {
-        echo 'Directly';
+            <p class="proile-rating"><i class="fa-solid fa-square-check fa-xl me-2 " style="color: #3668bf;"></i> Offer Selected : <span><?php if ($row["offer"] == '0') {
+        echo 'Paid';
     } else if ($data["offer"] == '1') {
         echo '5 Months';
     } elseif ($data["offer"] == '2') {
