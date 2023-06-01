@@ -188,7 +188,8 @@ if( isset( $_SESSION['id'] ) || isset( $_SESSION['agency_id'] ) ) {
         echo '6 Years'; 
     } ?></span></p>
     <p class="proile-rating"><i class="fa-solid fa-sack-dollar fa-xl me-2" style="color: #3668bf; "></i>Property Price: <span><?php echo $order['price'] ?></span></p>
-    <p class="proile-rating"><i class="fa-solid fa-money-check-dollar  fa-xl me-2" style="color: #3668bf;"></i>Monthly paying amount: DA<span> <?php
+    <?php if ($order['offer'] != '0'){?>
+      <p class="proile-rating"><i class="fa-solid fa-money-check-dollar  fa-xl me-2" style="color: #3668bf;"></i>Monthly paying amount: DA<span> <?php
         $offer = $order['offer'];
         $price = $order['price'];
         $payingAmount = 0; 
@@ -201,8 +202,8 @@ if( isset( $_SESSION['id'] ) || isset( $_SESSION['agency_id'] ) ) {
         } else {
             $payingAmount = $price / 72;
         } 
-        echo number_format($payingAmount, 5, '.', ' '); 
-        ?></span>
+        echo number_format($payingAmount, 5, '.', ' ');  ?>
+        </span>
     </p>
     <p class="proile-rating"><i class="fa-solid fa-piggy-bank fa-xl me-2" style="color: #3668bf;"></i>Remaining Amount: DA <span><?php echo $order['price'] -  $payingAmount; ?></span>
     </p>
@@ -217,7 +218,7 @@ if( isset( $_SESSION['id'] ) || isset( $_SESSION['agency_id'] ) ) {
         ?>
     </span>
     </p>
-
+    <?php }?>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
