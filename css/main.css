@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.main input ,select{
+    padding: 8px;
+    margin: 8px;
+    background-color: rgb(245, 245, 245);
+    border: 2px rgb(226, 226, 226) solid;
+    outline: none;
+    border-radius: 3px;
+}
+select{
+    color: black;
+}
+input[type="submit"]{
+    background-color: rgb(42, 63, 223);
+    width: 180px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(63, 18, 142);
+    transition: 0,6s;
+}
+#login{
+    background-color: rgb(40, 164, 98);
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+}
+#login:hover{
+    transition: 0,6s;
+    background-color: rgb(10, 62, 12);
+}
+#error{
+    
+    color: red;
+    padding: 4px;
+    
+}

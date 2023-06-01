@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="website icon" type="png" href="img/build4.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/indexC.css">
+    <link rel="stylesheet" href="css/reals.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://font.gstatic.com" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg "
+            style="background-color: whitesmoke; top: 0px; position: fixed; width: 100%; height: 70px; z-index: 9999;">
+            <div class="container-fluid">
+                <div class="main-logo" style="padding-left: 50px;">
+                    <img id="logopic" src="img/build4.png" alt="logopic">
+                    <h1 id="logo">RealEstate</h1>
+                </div>
+                <div class="navbar-brand" href="#"
+                    style="padding-right: 300px; padding-left: 150px; color: rgb(15, 15, 72);"> </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: black;">Home</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#about" style="color: black;">About</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="djihane.php#divider" style="color: black;">Properties</a>
+                        </li>
+                       
+                        <li class="nav-item mx-4"> <a href="index.php"><button type="button" class="btn btn-outline-primary"> LogIn
+                                </button></a></i></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="info" style="padding-top: 70px;
+        background-color: whitesmoke;
+        height: 100px;
+       ">
+        <div class="d-flex information justify-content-end">
+            <div class=" d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                <div class="me-3 pe-3 border-end py-2">
+                    <p class="m-0"><i class="fa fa-envelope-open me-2"></i>RealEstate@gmail.com</p>
+                </div>
+                <div class="py-2">
+                    <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+213534567</p>
+                </div>
+            </div>
+
+        </div>
+        <main style="width: 100%;">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/deal1.jpg" class="d-block w-100" alt="..." style="height: 550px; width: 100%;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="first"
+                                style="color: rgb(1, 39, 65); font-size: xx-large; background-color: rgba(255, 255, 255, 0.4);;">
+                                <h1>all the properties you're searching for </h1>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000" style="width: 100%;">
+                        <img src="img/deal2.jpg" class="d-block w-100" alt="..." style="height: 550px; width: 100%;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="first"
+                                style="color: rgb(1, 39, 65); font-size: xx-large; background-color: rgba(255, 255, 255, 0.4);;">
+                                <h1>RealEstate agencies work managment </h1>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/deal3.jfif" class="d-block w-100" alt="..." style="height: 550px; width: 100%;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="first"
+                                style="color: rgb(1, 39, 65); font-size: xx-large; background-color: rgba(255, 255, 255, 0.4);;">
+                                <h1>Make your life easy with RealEstate</h1>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="container-fluid bg-white p-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 py-6 px-5">
+                        <h1 class="display-5 mb-4">Welcome To <span class="text-primary">RealEstate</span></h1>
+
+                        <p class="mb-4">Find your perfect property on our online real estate website. Buy, or rent with ease. User-friendly interface, advanced search. Detailed listings, reliable descriptions, and high-quality photos. Short-term or long-term rentals available. Trust our experienced team. Start your real estate journey now! Click on get started to begin
+                        </p>
+                        <a href="djihane.php" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Get Started</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
+                            <div class="d-flex text-white mb-5">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-user-tie fs-4"></i>
+                                </div>
+                                <div class="ps-4">
+                                    <h3>Business Planning</h3>
+                                    <p class="mb-0">We offer expert real estate business planning services to drive your success. Trust our team for market analysis, financial projections, and strategic recommendations</p>
+                                </div>
+                            </div>
+                            <div class="d-flex text-white mb-5">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-chart-line fs-4"></i>
+                                </div>
+                                <div class="ps-4">
+                                    <h3>Financial Analaysis</h3>
+                                    <p class="mb-0">Our financial analysis services offer valuable insights to optimize your real estate investments. Trust us for comprehensive evaluations, profit analysis, and ROI calculations</p>
+                                </div>
+                            </div>
+                            <div class="d-flex text-white">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-balance-scale fs-4"></i>
+                                </div>
+                                <div class="ps-4">
+                                    <h3>legal Advisory</h3>
+                                    <p class="mb-0">Trust our legal advisory services for expert guidance on real estate legal matters. We help you navigate complex challenges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid py-6 px-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                    <h1 class="display-5 mb-0">Why Choose Us!!!</h1>
+                    <hr class="w-25 mx-auto bg-primary">
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="row g-5">
+                            <div class="col-12">
+                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-cubes fs-4 text-white"></i>
+                                </div>
+                                <h3>Wide Selection of Properties</h3>
+                                <p class="mb-0">Our platform offers a diverse range of properties listed by reputable real estate agencies. Users can explore and find a property that suits their preferences and requirements.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-percent fs-4 text-white"></i>
+                                </div>
+                                <h3>Streamlined Process</h3>
+                                <p class="mb-0">Streamlined property search and transactions. Easy registration and listing for real estate agencies. Effortless browsing, inquiries, and buying/renting initiation for users.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-award fs-4 text-white"></i>
+                                </div>
+                                <h3>Transparent Renting and Payment Management</h3>
+                                <p class="mb-0">Streamlined rental property management. Track renting days and manage payments with clarity and transparency.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="about" class="d-flex align-items-center h-100 text-center">
+                            <img class="img-fluid" src="img/slide6.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row g-5">
+                            <div class="col-12">
+                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="far fa-smile-beam fs-4 text-white"></i>
+                                </div>
+                                <h3>Comprehensive Property Details</h3>
+                                <p class="mb-0">Comprehensive property information for informed decisions. Detailed images, descriptions, amenities, pricing, and location details available on our platform.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-user-tie fs-4 text-white"></i>
+                                </div>
+                                <h3>Property Management Tools</h3>
+                                <p class="mb-0">Convenient property management tools for real estate agencies. Easily add, edit, and update listings, manage inquiries, and track transactions in one centralized platform.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-headset fs-4 text-white"></i>
+                                </div>
+                                <h3>Transparent and Reliable Information</h3>
+                                <p class="mb-0">Transparent and reliable property information. Accurate and up-to-date details on pricing, availability, and property features.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-white text-secondary p-5">
+                <div class="row g-5">
+                    <div class="col-12 text-center">
+                        <h1 class="display-5 mb-4" style="font-size: bald; font-family:bold; color: rgb(13, 23, 100);">
+                            Join Us As An Agency</h1>
+                        <div class="d-flex gap-2 col-6 mx-auto justify-content-center">
+                            <a href="agency_registrer.php" class="btn btn-primary w-25">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <div class="f2">
+            <div class="topicons">
+                <a href="https://instagram.com/djihane_bouteldja?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram">
+                        Instagram : Real_Estate</i></a> <br>
+                <a href="#"><i class="fab fa-twitter"> Twitter : @RealEs23</i></a><br />
+                <a href="https://www.facebook.com/jii.hane.315"><i class="fab fa-facebook"> Facebook : Real
+                        estate</i></a><br />
+                <a href="https://call.whatsapp.com/video/IfDfXpk0PaSWeZbfCL0YLJ"><i class="fab fa-whatsapp"> Whatsapp :
+                        +2135655665</i></a><br />
+            </div>
+            <p class="copy">&copy; RealEstate 2023</p>
+            <a href="#top"><i class="fa-regular fa-up"></i></a>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-item{
+    display: flex;
+    padding-right: 0px;
+    font-style: italic;
+  }
+  
+.info{
+
+    background-color: rgb(185, 45, 32);
+    
+}
